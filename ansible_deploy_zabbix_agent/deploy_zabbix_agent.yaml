@@ -1,0 +1,11 @@
+---
+- hosts: zabbix_agent
+  remote_user: root
+  tasks:
+    - name: unarchive zabbix_agent_deploy.tar.gz
+      unarchive: src=/usr/local/src/zabbix_agent_deploy.tar.gz dest=/usr/local/src
+    - name: change script permission
+      shell: chmod u+x /usr/local/src/compile_install_zabbix.sh
+    - name: run script to install and deploy zabbix agent
+      shell: /usr/local/src/compile_install_zabbix.sh
+...
