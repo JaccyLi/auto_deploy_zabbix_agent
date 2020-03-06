@@ -30,3 +30,5 @@ root@ubuntu-suosuoli-node1:/usr/local/src/auto_deploy_zabbix_agent/script_deploy
 -rw-r--r-- 1 root root      404 Mar  6 00:32 deploy_zabbix_agent.yaml
 -rw-r--r-- 1 root root 17089145 Mar  5 22:06 zabbix_agent_deploy.tar.gz
 ```
+
+## zabbix_agent_mass_management 该文件夹放了批量管理zabbix agent的shell脚本和python脚本
